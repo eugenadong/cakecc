@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100dvh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'DotGothic16', 'Noto Sans TC', sans-serif;
+  }
+}
+
+.font-pixel-en {
+  font-family: 'Silkscreen', 'DotGothic16', monospace;
+}
+
+.font-pixel-tc {
+  font-family: 'DotGothic16', 'Noto Sans TC', sans-serif;
+}
+
+.font-pixel-num {
+  font-family: 'Silkscreen', 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.pixel-canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.pixel-panel {
+  background-color: #FFFDF7;
+  border: 3px solid #4A2521;
+  box-shadow:
+    inset -3px -3px 0px #EAD9C7,
+    inset 3px 3px 0px #FFFFFF,
+    0px 6px 0px rgba(43, 25, 24, 0.35);
+}
+
+.pixel-btn-primary {
+  background-color: #E63946;
+  color: #FFFDF7;
+  border: 3px solid #4A2521;
+  box-shadow:
+    inset -3px -3px 0px #B0212D,
+    inset 3px 3px 0px #FF7582,
+    0px 4px 0px #4A2521;
+  transition: transform 80ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 80ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pixel-btn-primary:hover {
+  background-color: #F04654;
+}
+
+.pixel-btn-primary:active {
+  transform: translateY(3px);
+  box-shadow:
+    inset -2px -2px 0px #B0212D,
+    inset 2px 2px 0px #FF7582,
+    0px 1px 0px #4A2521;
+}
+
+.pixel-btn-secondary {
+  background-color: #FFF4E0;
+  color: #4A2521;
+  border: 3px solid #4A2521;
+  box-shadow:
+    inset -3px -3px 0px #E5CEA8,
+    inset 3px 3px 0px #FFFFFF,
+    0px 4px 0px #4A2521;
+  transition: transform 80ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 80ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pixel-btn-secondary:hover {
+  background-color: #FFF9EE;
+}
+
+.pixel-btn-secondary:active {
+  transform: translateY(3px);
+  box-shadow:
+    inset -2px -2px 0px #E5CEA8,
+    inset 2px 2px 0px #FFFFFF,
+    0px 1px 0px #4A2521;
+}

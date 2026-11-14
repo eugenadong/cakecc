@@ -1,0 +1,6 @@
+{
+  "name": "像素甜點塔 Pixel Cake Stack",
+  "description": "復古像素風甜點店 2D 蛋糕疊疊樂手機遊戲，透過鐘擺投落、精準切片、連擊回寬與每 10 層解鎖新口味關卡，挑戰疊出最高甜點塔。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
